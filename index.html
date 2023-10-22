@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Google Font Dela Gothic One-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Rampart+One&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>converter</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css"">
+    <link rel="stylesheet" href="/style.css" type="text/css">
+    <link rel="shortcut icon" href="./public/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/6441db969a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="video-container">
+        <video loop autoplay>
+            <source src="/public/bg3.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    <h1>Converter</h1>
+    
+    <div class="container">
+
+        <div class="form-floating col-6 mx-auto">
+            <select class="form-select type-selection" id="type-depart" aria-label="Floating label select example">
+                <option selected id="vide-depart">Selectionner</option>
+                <option id="binaireD" value="binaireD">Binaire (x)₂</option>
+                <option id="octaleD" value="octaleD">Octale (x)₈</option>
+                <option id="decimaleD" value="decimaleD">Decimale (x)₁₀</option>
+                <option id="hexadecimalD" value="hexadecimalD">Hexadécimal (x)₁₆</option>
+            </select>
+            <label for="floatingSelect">_ convertir de</label>
+        </div>
+
+        <div><button class="echange-button"><i class="fa-solid fa-arrows-up-down echange"></i></button></div>
+
+        <div class="form-floating col-6 mx-auto mb-5">
+            <select class="form-select type-selection" id="type-arrive" aria-label="Floating label select example">
+                <option selected id="vide-arrive">Selectionner</option>
+                <option id="binaireA" value="binaireA">Binaire (x)₂</option>
+                <option id="octaleA" value="octaleA">Octale (x)₈</option>
+                <option id="decimaleA" value="decimaleA">Decimale (x)₁₀</option>
+                <option id="hexadecimalA" value="hexadecimalA">Hexadécimal (x)₁₆</option>
+            </select>
+            <label for="floatingSelect">_ converti à</label>
+        </div>
+
+        <div class="row col-6 mx-auto mb-5">
+            <div class="input-group has-validation px-0">
+                <span class="input-group-text input-label"><i class="fa-solid fa-hashtag"></i></span>
+                <div class="form-floating is-invalid">
+                    <input type="text" class="form-control is-invalid valeur" id="valeur" required>
+                    <label class="input-text" for="floatingInputGroup2">_ valeur</label>
+                </div>
+                <div class="invalid-feedback text-light">
+                    <span class="error-input" id="error-input">Saisi non valide.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row col-6 mx-auto">
+            <div class="text-center">
+                <button type="button" class="btn btn-lg button" id="button">convertir</button>
+            </div>
+        </div>
+        
+        <div class="row col-6 mx-auto row-message">
+            <div class="text-uppercase text-light text-center message" id="message">
+                <i class="fa-solid fa-copy copy-icon"></i>
+                <span id="valeur-convertie">
+                </span><span id="exposant"></span>
+            </div>
+        </div>
+    </div>
+
+    <p class="mentions">
+        <a class="logo_link" href="https://adenan.xyz"><img class="logo" src="/public/logo.png" alt="adenan-logo"></a>
+        <a class="adenan-link" href="https://adenan.xyz">Adenan KHACHNANE</a>Copyright © 2023.<br>Tous droits réservés.
+    </p>
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="/main.js"></script>
+</body>
+</html>
