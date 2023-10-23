@@ -295,7 +295,8 @@ h1 {
 
     body {
         width: auto;
-        height: 100%;
+        height: fit-content;
+        min-height: 100vh;
     }
 
 
