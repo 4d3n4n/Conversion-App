@@ -295,6 +295,7 @@ h1 {
 
     .video-container {
         width: auto;
+        height: 100%;
     }
     
     video {
