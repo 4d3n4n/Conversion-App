@@ -293,25 +293,11 @@ h1 {
 
 @media (max-width: 768px) {
 
-    .video-container {
+    body {
         width: auto;
-        height: auto;
+        height: 100%;
     }
-    
-    video {
-        position: fixed;
-        object-fit: cover;
-    }
-    
-    .video-container::after {
-        content: '';
-        top: 0;
-        left: 0;
-        width: 100%;
-        background: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
-        z-index: -1;
-        pointer-events: none;
-    }
+
 
     h1 {
         position: relative;
