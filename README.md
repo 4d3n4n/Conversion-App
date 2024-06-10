@@ -41,16 +41,16 @@ https://cool-convert.netlify.app/
 Les contributions sont les bienvenues ! Veuillez suivre les étapes suivantes pour contribuer :
 
 1. Forkez le projet.
-2. Créez une branche pour votre fonctionnalité (`git checkout -b feature/AmazingFeature`).
-3. Commitez vos modifications (`git commit -m 'Add some AmazingFeature'`).
-4. Poussez la branche (`git push origin feature/AmazingFeature`).
+2. Créez une branche pour votre fonctionnalité `git checkout -b feature/AmazingFeature`.
+3. Commitez vos modifications `git commit -m 'Add some AmazingFeature'`.
+4. Poussez la branche `git push origin feature/AmazingFeature`.
 5. Ouvrez une Pull Request.
 
 <br>
 
 ## Licence
 
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+Ce projet est sous licence MIT.
 
 ---
 
